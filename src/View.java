@@ -28,7 +28,7 @@ public class View extends Application {
             // Load layout from FXML file
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Application.class.getResource("View.fxml"));
-            this.layout = (BorderPane) loader.load();
+            this.layout = loader.load();
 
             // Show the scene
             Scene scene = new Scene(this.layout);
