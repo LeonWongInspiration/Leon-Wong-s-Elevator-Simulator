@@ -2,9 +2,11 @@ import java.util.Vector;
 
 public class Controller extends Thread {
     private Vector<Message> messageCenter;
+    private View view;
     private Thread t;
-    public Controller(Vector<Message> mc){
+    public Controller(Vector<Message> mc, View v){
         this.messageCenter = mc;
+        this.view = v;
     }
 
     @Override

@@ -1,23 +1,14 @@
-import javax.swing.*;
+import javafx.application.Application;
+import javafx.stage.Stage;
 
-public class View {
-    public JFrame mainFrame;
-    public View(){
-        // Make the frame look better
-        JFrame.setDefaultLookAndFeelDecorated(true);
-        // Create frame
-        this.mainFrame = new JFrame();
-        // Set title
-        this.mainFrame.setTitle("Elevator Simulator");
-        // Set close behaviors
-        this.mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+public class View extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
 
-        JLabel label = new JLabel("Hello World");
-        this.mainFrame.getContentPane().add(label);
+    @Override
+    public void start(Stage primaryStage) {
 
-        // Show the frame
-        this.mainFrame.pack();
-        this.mainFrame.setVisible(true);
     }
 }
