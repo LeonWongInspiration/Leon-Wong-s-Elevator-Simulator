@@ -1,4 +1,5 @@
 public class Message {
+
     public static final int passengerLeaveElevator = 0;
     public static final int passengerEnterElevator = 1;
     public static final int elevatorChangeFloor = 2;

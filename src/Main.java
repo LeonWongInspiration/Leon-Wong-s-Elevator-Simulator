@@ -1,5 +1,8 @@
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args){
+        View v = new View();
         Building b = new Building(20, 2, 20);
         Controller c = new Controller(b.messageCenter);
         c.start();
@@ -68,5 +71,6 @@ public class Main {
         b.addPassenger(1, new Passenger(5));
         b.elevatorList.get(0).addDestination(2);
         b.elevatorList.get(1).addDestination(16);
+
     }
 }

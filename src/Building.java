@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * Creates a building with given levels and elevators
  */
 public class Building {
+
     /// \#Levels of this building
     private int levels;
     /// \#Elevators of this building

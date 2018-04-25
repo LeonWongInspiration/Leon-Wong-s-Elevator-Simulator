@@ -33,6 +33,7 @@ public class Controller extends Thread {
                         System.out.println("Controller received wrong message!");
                 }
                 this.messageCenter.remove(0);
+
             }
         }
     }

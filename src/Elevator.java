@@ -57,6 +57,9 @@ public class Elevator extends Thread {
         }
     }
 
+    /**
+     * Run function
+     */
     @Override
     public synchronized void run(){
         while (true){
